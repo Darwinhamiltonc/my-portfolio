@@ -1,0 +1,27 @@
+  nav {
+    display: flex;
+    justify-Content: space-between;
+    align-items: center;
+    padding: 1rem 1.4rem;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .title {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 1.1rem;
+    gap: 6px;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
