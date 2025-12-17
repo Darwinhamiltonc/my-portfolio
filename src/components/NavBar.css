@@ -2,12 +2,16 @@
     display: flex;
     justify-Content: space-between;
     align-items: center;
-    padding: 1rem 1.4rem;
-
+    padding: 3rem 1.5rem;
     position: sticky;
     top: 0;
     z-index: 1000;
   }
+  .menu-btn {
+  background: none;
+  border: none;
+  color: #EDEDED; 
+}
 
   .title {
     font-size: 1.7rem;
@@ -19,9 +23,10 @@
     flex-direction: column;
     list-style: none;
     font-size: 1.1rem;
+    font-weight: bold;
     gap: 6px;
   }
   a{
     text-decoration: none;
-    color: black;
+    color: #6f6e6e
   }
