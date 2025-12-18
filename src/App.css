@@ -1,12 +1,12 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
 :root {
   --bg-main: #121212;
   --bg-card: #181818;
-  --text-main: #EDEDED;
-  --text-muted: #B3B3B3;
-  --border-soft: #2A2A2A;
+  --text-main: #ededed;
+  --text-muted: #b3b3b3;
+  --border-soft: #6f6d6da7;
 }
 @font-face {
   font-family: "Roboto";
@@ -21,10 +21,10 @@
   font-weight: 700;
   font-style: normal;
 }
-body{
-    box-sizing: border-box;
-    overflow-x: hidden;
-    background-color: var(--bg-main);
-    color: var(--text-main);
-    font-family: "Roboto", sans-serif;
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-family: "Roboto", sans-serif;
 }
