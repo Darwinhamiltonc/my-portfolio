@@ -8,8 +8,15 @@
 .hero-role {
   font-size: 2.3rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   padding-top: 3rem;
+}
+
+.hero-stack {
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+  margin-bottom: 1.5rem;
 }
 
 .hero-description {
@@ -22,9 +29,14 @@
   color: var(--text-muted);
 }
 
-.hero-stack {
-  font-size: 0.85rem;
-  letter-spacing: 0.05em;
-  opacity: 0.6;
-  margin-bottom: 1.5rem;
+.hero-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+  margin-top: 1.5rem;
+}
+
+.hero-socials a {
+  font-size: 1.7rem;
+  color: white;
 }

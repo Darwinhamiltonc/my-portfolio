@@ -1,4 +1,5 @@
 import "./SectionHero.css";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function SectionHero() {
   return (
@@ -12,6 +13,27 @@ function SectionHero() {
         accesibles y responsive con <strong>React</strong>, <strong>CSS</strong>{" "}
         y buenas prácticas.
       </p>
+      <h2>Social</h2>
+
+      <div className="hero-socials">
+        <a
+          href="https://www.linkedin.com/in/darwinhamilton"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+        >
+          <FaLinkedin />
+        </a>
+
+        <a
+          href="https://www.github.com/darwinhamiltonc"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <FaGithub />
+        </a>
+      </div>
     </section>
   );
 }
