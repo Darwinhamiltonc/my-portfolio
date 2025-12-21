@@ -1,0 +1,30 @@
+.hero {
+  height: 78vh;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: var(--text-main);
+}
+
+.hero-role {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding-top: 3rem;
+}
+
+.hero-description {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+  padding: 6px;
+  color: var(--text-muted);
+}
+
+.hero-stack {
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+  margin-bottom: 1.5rem;
+}
