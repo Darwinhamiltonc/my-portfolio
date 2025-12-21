@@ -93,12 +93,7 @@ function NavBar() {
             </button>
           </li>
           <li>
-            <a
-              href="#contact"
-              className="icon-btn"
-              aria-label="Contact"
-              onClick={() => setIsOpen(false)}
-            >
+            <a href="#contact" className="icon-btn" aria-label="Contact">
               <svg className="icon" viewBox="0 0 24 24" aria-hidden="true">
                 <circle cx="12" cy="8" r="4" />
 
