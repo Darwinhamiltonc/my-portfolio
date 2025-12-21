@@ -58,16 +58,28 @@ function NavBar() {
       {isOpen && (
         <ul className="mobile-menu">
           <li>
-            <button className="icon-btn" aria-label="Download CV" type="button">
+            <a
+              href="/cv-darwin-hamilton.pdf"
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+              className="icon-btn"
+              aria-label="Descargar CV"
+              onClick={() => setIsOpen(false)}
+            >
               <svg className="icon" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M12 3v12" />
                 <path d="M8 11l4 4 4-4" />
                 <path d="M4 21h16" />
               </svg>
-            </button>
+            </a>
           </li>
           <li>
-            <button className="icon-btn" aria-label="Languages">
+            <button
+              className="icon-btn"
+              aria-label="Languages"
+              onClick={() => setIsOpen(false)}
+            >
               <svg className="icon" viewBox="0 0 24 24" aria-hidden="true">
                 <circle cx="12" cy="12" r="9" />
 
@@ -81,7 +93,12 @@ function NavBar() {
             </button>
           </li>
           <li>
-            <a href="#contact" className="icon-btn" aria-label="Contact">
+            <a
+              href="#contact"
+              className="icon-btn"
+              aria-label="Contact"
+              onClick={() => setIsOpen(false)}
+            >
               <svg className="icon" viewBox="0 0 24 24" aria-hidden="true">
                 <circle cx="12" cy="8" r="4" />
 
