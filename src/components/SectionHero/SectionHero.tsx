@@ -4,14 +4,13 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 function SectionHero() {
   return (
     <section className="hero">
-      <h2 className="hero-role">Software Developer</h2>
+      <h2 className="hero-role">Frontend Developer</h2>
 
-      <p className="hero-stack">Frontend · React · CSS · TypeScript</p>
+      <p className="hero-stack">React · CSS · TypeScript</p>
 
       <p className="hero-description">
-        Especializado en desarrollo Frontend, creando interfaces modernas,
-        accesibles y responsive con <strong>React</strong>, <strong>CSS</strong>{" "}
-        y buenas prácticas.
+        I specialize in frontend development, building modern, accessible, and
+        responsive user interfaces using React, TypeScript, and clean CSS.
       </p>
       <h2>Social</h2>
 
