@@ -33,16 +33,18 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 13px;
+  gap: 10px;
   border: 2px solid var(--border-soft);
   border-radius: 15px;
-  text-align: center;
-  padding: 20px 20px;
   width: fit-content;
-  max-width: 90vw;
+  text-align: center;
+  padding: 15px 15px;
   position: absolute;
-  top: 85px;
-  left: 205px;
+  top: 95px;
+  left: 125px;
+}
+.mobile-menu a {
+  text-decoration: none;
 }
 
 li {
@@ -52,15 +54,19 @@ li {
 .icon-btn {
   background: none;
   border: none;
-  padding: 3px 0px;
+  padding: 2px 0px;
   color: inherit;
 }
 
 .icon {
-  padding: 5px;
+  padding: 4px;
   width: 24px;
   height: 24px;
   stroke: currentColor;
   stroke-width: 2;
   fill: none;
+}
+.text {
+  font-size: 14px;
+  display: inline-flex;
 }
