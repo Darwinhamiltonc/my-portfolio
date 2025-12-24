@@ -7,6 +7,7 @@ nav {
   top: 0;
   z-index: 1000;
 }
+
 .menu-btn {
   background: none;
   border: none;
@@ -18,11 +19,13 @@ nav {
   align-items: center;
   gap: 0.75rem;
 }
+
 .me img {
   height: 60px;
   width: auto;
   border-radius: 500%;
 }
+
 .title {
   font-size: 1.4rem;
   font-weight: bold;
@@ -30,21 +33,25 @@ nav {
 
 .mobile-menu {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  border: 2px solid var(--border-soft);
-  border-radius: 15px;
-  width: fit-content;
-  text-align: center;
-  padding: 15px 15px;
+  gap: 12px;
+  border: 1px solid var(--border-soft);
+  border-radius: 14px;
+  padding: 10px 12px;
+  background: var(--bg-card);
   position: absolute;
-  top: 95px;
-  left: 125px;
+  top: 85px;
+  left: 68%;
+  transform: translateX(-50%);
 }
+
 .mobile-menu a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-width: 56px;
   text-decoration: none;
+  color: inherit;
 }
 
 li {
@@ -52,21 +59,31 @@ li {
 }
 
 .icon-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
   background: none;
   border: none;
-  padding: 2px 0px;
+  padding: 0;
+
   color: inherit;
 }
 
 .icon {
   padding: 4px;
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   stroke: currentColor;
   stroke-width: 2;
   fill: none;
+  display: block;
 }
+
 .text {
   font-size: 14px;
-  display: inline-flex;
+  white-space: nowrap;
 }
