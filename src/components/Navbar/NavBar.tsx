@@ -57,7 +57,7 @@ function NavBar() {
         <ul className="mobile-menu">
           <li>
             <a
-              href="/cv-darwin-hamilton.pdf"
+              href="CV.pdf"
               download
               target="_blank"
               rel="noopener noreferrer"
