@@ -12,7 +12,7 @@ function SectionHero() {
         I specialize in frontend development, building modern, accessible, and
         responsive user interfaces using React, TypeScript, and clean CSS.
       </p>
-      <h2>Social</h2>
+      <h2 className="hero-social-title">Social</h2>
 
       <div className="hero-socials">
         <a

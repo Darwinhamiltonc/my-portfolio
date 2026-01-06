@@ -1,5 +1,5 @@
 .hero {
-  height: 78vh;
+  height: 70vh;
   padding: 2rem 1rem;
   text-align: center;
   color: var(--text-main);
@@ -29,6 +29,9 @@
   color: var(--text-muted);
 }
 
+.hero-social-title {
+  font-size: 34px;
+}
 .hero-socials {
   display: flex;
   justify-content: center;
@@ -37,6 +40,6 @@
 }
 
 .hero-socials a {
-  font-size: 1.7rem;
+  font-size: 2.2rem;
   color: white;
 }
