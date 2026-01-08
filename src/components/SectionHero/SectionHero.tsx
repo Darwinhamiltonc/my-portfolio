@@ -9,15 +9,20 @@ type HeroProps = {
 function SectionHero({ language }: HeroProps) {
   return (
     <section className="hero">
-      <h2 className="hero-role">Frontend Developer</h2>
+      <h2 className="hero-role">
+        {translations[language].heroSection.heroRol}
+      </h2>
 
-      <p className="hero-stack">React · CSS · TypeScript</p>
+      <p className="hero-stack">
+        {translations[language].heroSection.heroStack}
+      </p>
 
       <p className="hero-description">
-        I specialize in frontend development, building modern, accessible, and
-        responsive user interfaces using React, TypeScript, and clean CSS.
+        {translations[language].heroSection.heroDescription}
       </p>
-      <h2 className="hero-social-title">Social</h2>
+      <h2 className="hero-social-title">
+        {translations[language].heroSection.heroSocialTitle}
+      </h2>
 
       <div className="hero-socials">
         <a
