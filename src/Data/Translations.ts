@@ -16,7 +16,7 @@ export const translations = {
       contact: "Contacto",
     },
     heroSection: {
-      heroRol: "Desarrollador Frontend",
+      heroRol: "Frontend Developer",
       heroStack: "React · CSS · TypeScript",
       heroDescription:
         "Me especializo en desarrollo frontend, construyendo interfaces de usuario modernas, accesibles y receptivas utilizando React, TypeScript y CSS limpio.",
