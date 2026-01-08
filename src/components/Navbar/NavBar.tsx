@@ -1,8 +1,15 @@
 import "./NavBar.css";
 import memoji from "../../assets/Pictures/memoji.jpeg";
 import { useState } from "react";
+import { translations } from "../../Data/Translations";
+import type { Language } from "../../Data/Translations";
 
-function NavBar() {
+type NavBarProps = {
+  language: Language;
+  onToggleLanguage: () => void;
+};
+
+function NavBar({ onToggleLanguage, language }: NavBarProps) {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen((prev) => !prev);
   return (
@@ -77,7 +84,10 @@ function NavBar() {
             <button
               className="icon-btn"
               aria-label="Languages"
-              onClick={() => setIsOpen(false)}
+              onClick={() => {
+                setIsOpen(false);
+                onToggleLanguage();
+              }}
             >
               <svg className="icon" viewBox="0 0 24 24" aria-hidden="true">
                 <circle cx="12" cy="12" r="9" />
@@ -104,7 +114,7 @@ function NavBar() {
 
                 <path d="M4 20c0-4 4-6 8-6s8 2 8 6" />
               </svg>
-              Contacto
+              {translations[language].navBar.contact}
             </a>
           </li>
         </ul>

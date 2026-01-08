@@ -1,7 +1,12 @@
 import "./SectionHero.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { translations } from "../../Data/Translations";
+import type { Language } from "../../Data/Translations";
 
-function SectionHero() {
+type HeroProps = {
+  language: Language;
+};
+function SectionHero({ language }: HeroProps) {
   return (
     <section className="hero">
       <h2 className="hero-role">Frontend Developer</h2>
