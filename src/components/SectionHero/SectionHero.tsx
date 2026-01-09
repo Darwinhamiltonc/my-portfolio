@@ -6,6 +6,7 @@ import type { Language } from "../../Data/Translations";
 type HeroProps = {
   language: Language;
 };
+
 function SectionHero({ language }: HeroProps) {
   return (
     <section className="hero">
