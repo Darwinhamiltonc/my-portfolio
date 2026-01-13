@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import type { Language } from "./Data/Translations";
 import NavBar from "./components/Navbar/NavBar";
 import SectionHero from "./components/SectionHero/SectionHero";
@@ -12,6 +12,11 @@ function App() {
     SetLanguage((prev) => (prev === "en" ? "es" : "en"));
   };
 
+  useEffect(() => {
+    alert(
+      "This web is still in progress, but don't worry everything will be done soon😼"
+    );
+  }, []);
   return (
     <>
       <header className="p-header">
