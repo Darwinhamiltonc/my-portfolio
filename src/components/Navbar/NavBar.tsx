@@ -12,6 +12,7 @@ type NavBarProps = {
 function NavBar({ onToggleLanguage, language }: NavBarProps) {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen((prev) => !prev);
+
   return (
     <nav>
       <div className="me">

@@ -63,13 +63,10 @@ li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   gap: 6px;
-
   background: none;
   border: none;
   padding: 0;
-
   color: inherit;
 }
 
