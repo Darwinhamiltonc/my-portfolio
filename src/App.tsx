@@ -26,7 +26,7 @@ function App() {
       <main>
         <SectionHero language={language} />
         <Projects />
-        <About />
+        <About language={language} />
       </main>
       <footer></footer>
     </>
