@@ -5,6 +5,7 @@ import NavBar from "./components/Navbar/NavBar";
 import SectionHero from "./components/SectionHero/SectionHero";
 import Projects from "./components/Projects/Projects";
 import About from "./components/About/About";
+import Skills from "./components/Skills/Skills";
 
 function App() {
   const [language, SetLanguage] = useState<Language>("en");
@@ -27,6 +28,7 @@ function App() {
         <SectionHero language={language} />
         <Projects />
         <About language={language} />
+        <Skills />
       </main>
       <footer></footer>
     </>
