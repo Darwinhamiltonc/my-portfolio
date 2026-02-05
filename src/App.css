@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 :root {
@@ -23,7 +24,6 @@
   font-style: normal;
 }
 body {
-  box-sizing: border-box;
   overflow-x: hidden;
   background-color: var(--bg-main);
   color: var(--text-main);
