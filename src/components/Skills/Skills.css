@@ -1,6 +1,7 @@
 .skills-section {
   padding: 20px;
 }
+
 .skills-title {
   font-size: 2.3rem;
   text-align: center;
@@ -9,6 +10,22 @@
 }
 
 .skills-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   border: 1px solid var(--border-soft);
   border-radius: 15px;
+  padding: 10px;
+}
+.skills-item {
+  border: 1px solid var(--border-soft);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 15px;
+}
+ul {
+  padding: 0;
 }
