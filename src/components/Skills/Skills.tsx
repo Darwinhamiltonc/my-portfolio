@@ -5,21 +5,40 @@ function Skills() {
     <section className="skills-section">
       <h2 className="skills-title">Skills</h2>
       <ul className="skills-card">
-        <li>
-          HTML5 <SiHtml5 />
-        </li>
-        <li>
-          CSS <SiCss3 />
-        </li>
-        <li>
-          TypeScript <SiTypescript />
-        </li>
-        <li>
-          React <SiReact />
-        </li>
-        <li>
-          Git <SiGit />
-        </li>
+        <span className="skills-item">
+          <li>
+            <SiHtml5 />
+            <span>HTML5</span>
+          </li>
+        </span>
+
+        <span className="skills-item">
+          <li>
+            <SiCss3 />
+            <span>CSS3</span>
+          </li>
+        </span>
+
+        <span className="skills-item">
+          <li>
+            <SiTypescript />
+            <span>TypeScript</span>
+          </li>
+        </span>
+
+        <span className="skills-item">
+          <li>
+            <SiReact />
+            <span>React</span>
+          </li>
+        </span>
+
+        <span className="skills-item">
+          <li>
+            <SiGit />
+            <span>Git</span>
+          </li>
+        </span>
       </ul>
     </section>
   );
