@@ -5,40 +5,30 @@ function Skills() {
     <section className="skills-section">
       <h2 className="skills-title">Skills</h2>
       <ul className="skills-card">
-        <span className="skills-item">
-          <li>
-            <SiHtml5 />
-            <span>HTML5</span>
-          </li>
-        </span>
+        <li className="skills-item">
+          <SiHtml5 className="item-icon html-icon" />
+          <span className="item-name">HTML5</span>
+        </li>
 
-        <span className="skills-item">
-          <li>
-            <SiCss3 />
-            <span>CSS3</span>
-          </li>
-        </span>
+        <li className="skills-item">
+          <SiCss3 className="item-icon css-icon" />
+          <span className="item-name">CSS3</span>
+        </li>
 
-        <span className="skills-item">
-          <li>
-            <SiTypescript />
-            <span>TypeScript</span>
-          </li>
-        </span>
+        <li className="skills-item">
+          <SiTypescript className="item-icon typescript-icon" />
+          <span className="item-name">TypeScript</span>
+        </li>
 
-        <span className="skills-item">
-          <li>
-            <SiReact />
-            <span>React</span>
-          </li>
-        </span>
+        <li className="skills-item">
+          <SiReact className="item-icon react-icon" />
+          <span className="item-name">React</span>
+        </li>
 
-        <span className="skills-item">
-          <li>
-            <SiGit />
-            <span>Git</span>
-          </li>
-        </span>
+        <li className="skills-item">
+          <SiGit className="item-icon git-icon" />
+          <span className="item-name">Git</span>
+        </li>
       </ul>
     </section>
   );
