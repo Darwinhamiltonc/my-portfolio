@@ -6,6 +6,7 @@ import SectionHero from "./components/SectionHero/SectionHero";
 import Projects from "./components/Projects/Projects";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
+import ContactForm from "./components/Contact/Contact";
 
 function App() {
   const [language, SetLanguage] = useState<Language>("en");
@@ -29,6 +30,7 @@ function App() {
         <Projects />
         <About language={language} />
         <Skills />
+        <ContactForm />
       </main>
       <footer></footer>
     </>
