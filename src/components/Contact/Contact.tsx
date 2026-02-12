@@ -24,7 +24,8 @@ export default function ContactForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(formData);
-    // aquí luego conectas EmailJS, Formspree, etc.
+    // Here you can add your logic to send the form data to a server or an email service
+    setFormData({ name: "", email: "", message: "" }); // Clear the form after submission
   };
 
   return (
