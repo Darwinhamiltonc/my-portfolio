@@ -7,6 +7,7 @@ import Projects from "./components/Projects/Projects";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import ContactForm from "./components/Contact/Contact";
+import Reveal from "./components/Reveal/Reveal";
 
 function App() {
   const [language, SetLanguage] = useState<Language>("en");
@@ -27,10 +28,21 @@ function App() {
       </header>
       <main>
         <SectionHero language={language} />
-        <Projects />
-        <About language={language} />
-        <Skills />
-        <ContactForm />
+        <Reveal>
+          <Projects />
+        </Reveal>
+
+        <Reveal>
+          <About language={language} />
+        </Reveal>
+
+        <Reveal>
+          <Skills />
+        </Reveal>
+
+        <Reveal>
+          <ContactForm />
+        </Reveal>
       </main>
       <footer></footer>
     </>
