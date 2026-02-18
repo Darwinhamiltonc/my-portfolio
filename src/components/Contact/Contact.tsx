@@ -29,7 +29,7 @@ function ContactForm() {
   };
 
   return (
-    <section className="contact-section">
+    <section className="contact-section" id="contact">
       <form onSubmit={handleSubmit} className="contact-form">
         <h2 className="contact-title">Contact</h2>
 
