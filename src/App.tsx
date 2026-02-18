@@ -29,7 +29,7 @@ function App() {
       <main>
         <SectionHero language={language} />
         <Reveal>
-          <Projects />
+          <Projects language={language} />
         </Reveal>
 
         <Reveal>
@@ -37,11 +37,11 @@ function App() {
         </Reveal>
 
         <Reveal>
-          <Skills />
+          <Skills language={language} />
         </Reveal>
 
         <Reveal>
-          <ContactForm />
+          <ContactForm language={language} />
         </Reveal>
       </main>
       <footer></footer>
