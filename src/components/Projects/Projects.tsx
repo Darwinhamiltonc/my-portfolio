@@ -1,8 +1,17 @@
 import "./Projects.css";
-function Projects() {
+import { translations } from "../../Data/Translations";
+import type { Language } from "../../Data/Translations";
+
+type ProjectsProps = {
+  language: Language;
+};
+
+function Projects({ language }: ProjectsProps) {
   return (
     <section className="project-section">
-      <h2 className="project-title">Projects</h2>
+      <h2 className="project-title">
+        {translations[language].projectsSection.projectsTitle}
+      </h2>
 
       <a href="#" target="_blank" rel="noopener noreferrer">
         <img
