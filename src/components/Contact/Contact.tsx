@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./Contact.css";
+import { translations } from "../../Data/Translations";
+import type { Language } from "../../Data/Translations";
 
 type FormData = {
   name: string;
@@ -7,7 +9,11 @@ type FormData = {
   message: string;
 };
 
-function ContactForm() {
+type ContactFormProps = {
+  language: Language;
+};
+
+function ContactForm({ language }: ContactFormProps) {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -31,7 +37,9 @@ function ContactForm() {
   return (
     <section className="contact-section" id="contact">
       <form onSubmit={handleSubmit} className="contact-form">
-        <h2 className="contact-title">Contact</h2>
+        <h2 className="contact-title">
+          {translations[language].navBar.contact}
+        </h2>
 
         <input
           type="text"
