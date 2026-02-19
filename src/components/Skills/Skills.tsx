@@ -1,11 +1,16 @@
 import "./Skills.css";
 import { SiHtml5, SiCss3, SiReact, SiTypescript, SiGit } from "react-icons/si";
 import type { IconType } from "react-icons";
+import { translations } from "../../Data/Translations";
+import type { Language } from "../../Data/Translations";
 
 type Skill = {
   name: string;
   icon: IconType;
   className: string;
+};
+type SkillsProps = {
+  language: Language;
 };
 
 const skills: Skill[] = [
@@ -16,10 +21,12 @@ const skills: Skill[] = [
   { name: "Git", icon: SiGit, className: "git-icon" },
 ];
 
-function Skills() {
+function Skills({ language }: SkillsProps) {
   return (
     <section className="skills-section">
-      <h2 className="skills-title">Skills</h2>
+      <h2 className="skills-title">
+        {translations[language].skillsSection.skillsTitle}
+      </h2>
       <ul className="skills-card">
         {skills.map((skill) => {
           const Icon = skill.icon;
