@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import { translations } from "../../Data/Translations";
 import type { Language } from "../../Data/Translations";
@@ -20,6 +21,9 @@ function ContactForm({ language }: ContactFormProps) {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState<"success" | "error" | null>(null);
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
@@ -27,11 +31,32 @@ function ContactForm({ language }: ContactFormProps) {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formData);
+    setLoading(true);
+    setStatus(null);
 
-    setFormData({ name: "", email: "", message: "" });
+    try {
+      await emailjs.send(
+        "service_fcbx2t5",
+        "jsvllh3",
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          time: new Date().toLocaleString(),
+        },
+        "ULfwuSwrUlXf_kOHi",
+      );
+
+      setStatus("success");
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("Error sending message:", error);
+      setStatus("error");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -68,10 +93,24 @@ function ContactForm({ language }: ContactFormProps) {
           required
         />
 
-        <button type="submit">Send message</button>
+        <button type="submit" disabled={loading}>
+          {loading ? "Sending..." : "Send message"}
+        </button>
+
+        {status === "success" && (
+          <p className="success-message">✅ Message sent successfully!</p>
+        )}
+
+        {status === "error" && (
+          <p className="error-message">❌ Something went wrong. Try again.</p>
+        )}
       </form>
     </section>
   );
 }
 
 export default ContactForm;
+
+// template ID: jsvllh3
+// service ID: service_fcbx2t5
+// public key: ULfwuSwrUlXf_kOHi
