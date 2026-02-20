@@ -39,12 +39,11 @@ function ContactForm({ language }: ContactFormProps) {
     try {
       await emailjs.send(
         "service_fcbx2t5",
-        "jsvllh3",
+        "template_xuwowvc",
         {
           name: formData.name,
           email: formData.email,
           message: formData.message,
-          time: new Date().toLocaleString(),
         },
         "ULfwuSwrUlXf_kOHi",
       );
@@ -111,6 +110,6 @@ function ContactForm({ language }: ContactFormProps) {
 
 export default ContactForm;
 
-// template ID: jsvllh3
+// template ID: template_xuwowvc
 // service ID: service_fcbx2t5
 // public key: ULfwuSwrUlXf_kOHi
