@@ -8,6 +8,7 @@ import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import ContactForm from "./components/Contact/Contact";
 import Reveal from "./components/Reveal/Reveal";
+import Experience from "./components/Experience/Experience";
 
 function App() {
   const [language, SetLanguage] = useState<Language>("en");
@@ -42,6 +43,9 @@ function App() {
 
         <Reveal>
           <ContactForm language={language} />
+        </Reveal>
+        <Reveal>
+          <Experience />
         </Reveal>
       </main>
       <footer></footer>
