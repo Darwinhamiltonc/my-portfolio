@@ -5,7 +5,7 @@ export default function Experience() {
       <h2 className="experience-title">Experience</h2>
 
       <div className="experience-list">
-        <h3>Frontend Development Practice</h3>
+        <h3 className="subtitle">Frontend Development Practice</h3>
         <ul>
           <li>Built responsive web applications using React.</li>
           <li>Deployed applications using Vercel.</li>
@@ -15,11 +15,15 @@ export default function Experience() {
       </div>
 
       <div className="experience-list">
-        <h3>Certifications</h3>
+        <h3 className="subtitle">Certifications</h3>
         <ul>
-          <li>freeCodeCamp</li>
-          <li>Responsive Web Design</li>
-          <li>JavaScript Algorithms and Data Structures</li>
+          <li>
+            <strong className="fcc">freeCodeCamp</strong>
+            <ul>
+              <li>Responsive Web Design</li>
+              <li>JavaScript Algorithms and Data Structures</li>
+            </ul>
+          </li>
         </ul>
       </div>
     </section>
