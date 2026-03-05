@@ -78,8 +78,8 @@ export const translations = {
       certificationsTitle: "Certificaciones",
       certificationsList: [
         "freeCodeCamp",
-        "Responsive Web Design",
-        "JavaScript Algorithms and Data Structures",
+        "Diseño Web Responsivo",
+        "Algoritmos y Estructuras de Datos en JavaScript",
       ],
     },
   },
