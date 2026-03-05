@@ -12,6 +12,15 @@
   margin-top: 10px;
 }
 
+.subtitle {
+  color: var(--text-main);
+  margin-bottom: 5px;
+}
+.fcc {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
 .experience-list {
   border: 1px solid var(--border-soft);
   border-radius: 8px;
@@ -21,4 +30,5 @@
   background-color: var(--bg-card);
   margin-bottom: 20px;
   color: var(--text-muted);
+  line-height: 1.4;
 }
