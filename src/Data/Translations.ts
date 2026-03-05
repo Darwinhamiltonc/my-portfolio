@@ -24,6 +24,22 @@ export const translations = {
     contactSection: {
       contactTitle: "Contact",
     },
+    experienceSection: {
+      experienceTitle: "Experience",
+      experienceSubtitle: "Frontend Development Practice",
+      experienceList: [
+        "Built responsive web applications using React.",
+        "Deployed applications using Vercel.",
+        "Integrated APIs and handled dynamic state.",
+        "Focused on clean UI and component-based architecture.",
+      ],
+      certificationsTitle: "Certifications",
+      certificationsList: [
+        "freeCodeCamp",
+        "Responsive Web Design",
+        "JavaScript Algorithms and Data Structures",
+      ],
+    },
   },
   es: {
     navBar: {
@@ -49,6 +65,22 @@ export const translations = {
     },
     contactSection: {
       contactTitle: "Contacto",
+    },
+    experienceSection: {
+      experienceTitle: "Experiencia",
+      experienceSubtitle: "Práctica de Desarrollo Frontend",
+      experienceList: [
+        "Construí aplicaciones web responsivas usando React.",
+        "Desplegué aplicaciones usando Vercel.",
+        "Integré APIs y manejé estado dinámico.",
+        "Me enfoqué en una UI limpia y arquitectura basada en componentes.",
+      ],
+      certificationsTitle: "Certificaciones",
+      certificationsList: [
+        "freeCodeCamp",
+        "Responsive Web Design",
+        "JavaScript Algorithms and Data Structures",
+      ],
     },
   },
 };

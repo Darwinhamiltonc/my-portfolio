@@ -1,27 +1,44 @@
 import "./Experience.css";
-export default function Experience() {
+import { translations } from "../../Data/Translations";
+import type { Language } from "../../Data/Translations";
+type ExperienceProps = {
+  language: Language;
+};
+export default function Experience({ language }: ExperienceProps) {
   return (
     <section className="experience-section">
-      <h2 className="experience-title">Experience</h2>
+      <h2 className="experience-title">
+        {translations[language].experienceSection.experienceTitle}
+      </h2>
 
       <div className="experience-list">
-        <h3 className="subtitle">Frontend Development Practice</h3>
+        <h3 className="subtitle">
+          {translations[language].experienceSection.experienceSubtitle}
+        </h3>
         <ul>
-          <li>Built responsive web applications using React.</li>
-          <li>Deployed applications using Vercel.</li>
-          <li>Integrated APIs and handled dynamic state.</li>
-          <li>Focused on clean UI and component-based architecture.</li>
+          {translations[language].experienceSection.experienceList.map(
+            (item, index) => (
+              <li key={index}>{item}</li>
+            ),
+          )}
         </ul>
       </div>
 
       <div className="experience-list">
-        <h3 className="subtitle">Certifications</h3>
+        <h3 className="subtitle">
+          {translations[language].experienceSection.certificationsTitle}
+        </h3>
         <ul>
           <li>
-            <strong className="fcc">freeCodeCamp</strong>
+            <strong className="fcc">
+              {translations[language].experienceSection.certificationsList[0]}
+            </strong>
             <ul>
-              <li>Responsive Web Design</li>
-              <li>JavaScript Algorithms and Data Structures</li>
+              {translations[language].experienceSection.certificationsList
+                .slice(1)
+                .map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
             </ul>
           </li>
         </ul>

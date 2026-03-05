@@ -45,7 +45,7 @@ function App() {
           <ContactForm language={language} />
         </Reveal>
         <Reveal>
-          <Experience />
+          <Experience language={language} />
         </Reveal>
       </main>
       <footer></footer>
