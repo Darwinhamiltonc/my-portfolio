@@ -23,6 +23,12 @@ export const translations = {
     },
     contactSection: {
       contactTitle: "Contact",
+      name: "Your Name",
+      email: "Your Email",
+      message: "Your Message",
+      button: ["Send Message", "Sending..."],
+      messageSuccess: "✅ Message sent successfully!",
+      messageError: "❌ Something went wrong. Try again.",
     },
     experienceSection: {
       experienceTitle: "Experience",
@@ -65,6 +71,13 @@ export const translations = {
     },
     contactSection: {
       contactTitle: "Contacto",
+      name: "Tu Nombre",
+      email: "Tu Correo",
+      message: "Escribe tu mensaje aquí...",
+      button: ["Enviar Mensaje", "Enviando..."],
+      messageSuccess: "✅ ¡Mensaje enviado con éxito!",
+      messageError:
+        "❌ Ocurrió un error al enviar el mensaje. Por favor, inténtalo de nuevo.",
     },
     experienceSection: {
       experienceTitle: "Experiencia",

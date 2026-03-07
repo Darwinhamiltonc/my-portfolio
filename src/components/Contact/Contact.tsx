@@ -68,7 +68,7 @@ function ContactForm({ language }: ContactFormProps) {
         <input
           type="text"
           name="name"
-          placeholder="Your name"
+          placeholder={translations[language].contactSection.name}
           value={formData.name}
           onChange={handleChange}
           required
@@ -77,7 +77,7 @@ function ContactForm({ language }: ContactFormProps) {
         <input
           type="email"
           name="email"
-          placeholder="Your email"
+          placeholder={translations[language].contactSection.email}
           value={formData.email}
           onChange={handleChange}
           required
@@ -85,7 +85,7 @@ function ContactForm({ language }: ContactFormProps) {
 
         <textarea
           name="message"
-          placeholder="Your message"
+          placeholder={translations[language].contactSection.message}
           rows={5}
           value={formData.message}
           onChange={handleChange}
@@ -93,7 +93,9 @@ function ContactForm({ language }: ContactFormProps) {
         />
 
         <button type="submit" disabled={loading}>
-          {loading ? "Sending..." : "Send message"}
+          {loading
+            ? translations[language].contactSection.button[1]
+            : translations[language].contactSection.button[0]}
         </button>
 
         {status === "success" && (
