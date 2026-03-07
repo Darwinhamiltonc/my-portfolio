@@ -99,11 +99,15 @@ function ContactForm({ language }: ContactFormProps) {
         </button>
 
         {status === "success" && (
-          <p className="success-message">✅ Message sent successfully!</p>
+          <p className="success-message">
+            {translations[language].contactSection.messageSuccess}
+          </p>
         )}
 
         {status === "error" && (
-          <p className="error-message">❌ Something went wrong. Try again.</p>
+          <p className="error-message">
+            {translations[language].contactSection.messageError}
+          </p>
         )}
       </form>
     </section>
