@@ -25,7 +25,7 @@ export const translations = {
       contactTitle: "Contact",
       name: "Your Name",
       email: "Your Email",
-      message: "Your Message",
+      message: "Write your message here…",
       button: ["Send Message", "Sending..."],
       messageSuccess: "✅ Message sent successfully!",
       messageError: "❌ Something went wrong. Try again.",
