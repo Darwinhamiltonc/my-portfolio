@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+main section {
+  padding: 6rem 1.3rem;
+}
 :root {
   --bg-main: #121212;
   --bg-card: #181818;
