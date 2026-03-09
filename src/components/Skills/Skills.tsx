@@ -1,5 +1,13 @@
 import "./Skills.css";
-import { SiHtml5, SiCss3, SiReact, SiTypescript, SiGit } from "react-icons/si";
+import {
+  SiHtml5,
+  SiCss3,
+  SiReact,
+  SiTypescript,
+  SiGit,
+  SiGithub,
+  SiJavascript,
+} from "react-icons/si";
 import type { IconType } from "react-icons";
 import { translations } from "../../Data/Translations";
 import type { Language } from "../../Data/Translations";
@@ -16,9 +24,11 @@ type SkillsProps = {
 const skills: Skill[] = [
   { name: "HTML5", icon: SiHtml5, className: "html-icon" },
   { name: "CSS3", icon: SiCss3, className: "css-icon" },
+  { name: "JavaScript", icon: SiJavascript, className: "javascript-icon" },
   { name: "TypeScript", icon: SiTypescript, className: "typescript-icon" },
   { name: "React", icon: SiReact, className: "react-icon" },
   { name: "Git", icon: SiGit, className: "git-icon" },
+  { name: "GitHub", icon: SiGithub, className: "github-icon" },
 ];
 
 function Skills({ language }: SkillsProps) {
