@@ -2,6 +2,7 @@ import "./SectionHero.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { translations } from "../../Data/Translations";
 import type { Language } from "../../Data/Translations";
+import ico from "../../assets/icons/ico.svg";
 
 type HeroProps = {
   language: Language;
@@ -27,6 +28,7 @@ function SectionHero({ language }: HeroProps) {
 
       <div className="hero-socials">
         <a
+          className="linkedin-i"
           href="https://www.linkedin.com/in/darwinhamilton"
           target="_blank"
           rel="noopener noreferrer"
@@ -36,12 +38,16 @@ function SectionHero({ language }: HeroProps) {
         </a>
 
         <a
+          className="github-i"
           href="https://www.github.com/darwinhamiltonc"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
         >
           <FaGithub />
+        </a>
+        <a href="mailto:darwinhamiltoncapellan@gmail.com" aria-label="Gmail">
+          <img src={ico} alt="Gmail" className="gmail-icon" />
         </a>
       </div>
     </section>
