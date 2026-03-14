@@ -9,6 +9,7 @@ import Skills from "./components/Skills/Skills";
 import ContactForm from "./components/Contact/Contact";
 import Reveal from "./components/Reveal/Reveal";
 import Experience from "./components/Experience/Experience";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [language, SetLanguage] = useState<Language>("en");
@@ -48,7 +49,11 @@ function App() {
           <Experience language={language} />
         </Reveal>
       </main>
-      <footer></footer>
+      <Reveal>
+        <footer>
+          <Footer />
+        </footer>
+      </Reveal>
     </>
   );
 }
