@@ -49,11 +49,10 @@ function App() {
           <Experience language={language} />
         </Reveal>
       </main>
-      <Reveal>
-        <footer>
-          <Footer language={language} />
-        </footer>
-      </Reveal>
+
+      <footer>
+        <Footer language={language} />
+      </footer>
     </>
   );
 }
