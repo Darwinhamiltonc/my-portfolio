@@ -1,9 +1,14 @@
 import "./Footer.css";
-function Footer() {
+import { translations } from "../../Data/Translations";
+import type { Language } from "../../Data/Translations";
+
+type FooterProps = {
+  language: Language;
+};
+
+function Footer({ language }: FooterProps) {
   return (
-    <p className="footer-text">
-      &copy; {new Date().getFullYear()} Darwin Hamilton. All rights reserved.
-    </p>
+    <p className="footer-text">{translations[language].footer.copyright}</p>
   );
 }
 

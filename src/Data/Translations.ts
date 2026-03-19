@@ -46,6 +46,9 @@ export const translations = {
         "JavaScript Algorithms and Data Structures",
       ],
     },
+    footer: {
+      copyright: `© ${new Date().getFullYear()} Darwin Hamilton. All rights reserved.`,
+    },
   },
   es: {
     navBar: {
@@ -94,6 +97,9 @@ export const translations = {
         "Diseño Web Responsivo",
         "Algoritmos y Estructuras de Datos en JavaScript",
       ],
+    },
+    footer: {
+      copyright: `© ${new Date().getFullYear()} Darwin Hamilton. Todos los derechos reservados.`,
     },
   },
 };

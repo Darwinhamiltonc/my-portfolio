@@ -51,7 +51,7 @@ function App() {
       </main>
       <Reveal>
         <footer>
-          <Footer />
+          <Footer language={language} />
         </footer>
       </Reveal>
     </>
