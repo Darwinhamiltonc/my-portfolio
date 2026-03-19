@@ -22,6 +22,16 @@ function SectionHero({ language }: HeroProps) {
       <p className="hero-description">
         {translations[language].heroSection.heroDescription}
       </p>
+
+      <div className="cta-links">
+        <a className="cta-projects" href="#projects">
+          Ver proyectos
+        </a>
+        <a className="cta-contact" href="#contact">
+          Contáctame
+        </a>
+      </div>
+
       <h2 className="hero-social-title">
         {translations[language].heroSection.heroSocialTitle}
       </h2>

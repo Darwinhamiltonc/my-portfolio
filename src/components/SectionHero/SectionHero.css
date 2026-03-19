@@ -56,3 +56,28 @@
   width: 2.5rem;
   height: 2.5rem;
 }
+
+.cta-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+.cta-projects,
+.cta-contact {
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.cta-projects {
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: 2px solid var(--border-soft);
+  border-radius: 8px;
+}
+.cta-contact {
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: 2px solid var(--border-soft);
+  border-radius: 8px;
+}

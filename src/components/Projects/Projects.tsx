@@ -8,7 +8,7 @@ type ProjectsProps = {
 
 function Projects({ language }: ProjectsProps) {
   return (
-    <section className="project-section">
+    <section className="project-section" id="projects">
       <h2 className="project-title">
         {translations[language].projectsSection.projectsTitle}
       </h2>
