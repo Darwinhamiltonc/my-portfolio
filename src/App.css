@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -15,19 +16,7 @@ main section {
   --text-muted: #b3b3b3;
   --border-soft: #6f6d6da7;
 }
-@font-face {
-  font-family: "Roboto";
-  src: url("../assets/fonts/roboto/Roboto-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
 
-@font-face {
-  font-family: "Roboto";
-  src: url("../assets/fonts/roboto/Roboto-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
 body {
   overflow-x: hidden;
   background-color: var(--bg-main);
