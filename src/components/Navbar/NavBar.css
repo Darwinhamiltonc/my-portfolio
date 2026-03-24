@@ -41,7 +41,17 @@ nav {
   position: absolute;
   top: 85px;
   left: 68%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-8px); /* 👈 pequeño desplazamiento */
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: all 0.25s ease;
+}
+.mobile-menu.active {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0); /* 👈 vuelve a su posición */
+  pointer-events: auto;
 }
 
 .mobile-menu a {

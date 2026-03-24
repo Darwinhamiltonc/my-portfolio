@@ -61,65 +61,63 @@ function NavBar({ onToggleLanguage, language }: NavBarProps) {
         </svg>
       </button>
 
-      {isOpen && (
-        <ul className="mobile-menu">
-          <li>
-            <a
-              href="CV.pdf"
-              download
-              target="_blank"
-              rel="noopener noreferrer"
-              className="icon-btn"
-              aria-label="Descargar CV"
-              onClick={() => setIsOpen(false)}
-            >
-              <svg className="icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 3v12" />
-                <path d="M8 11l4 4 4-4" />
-                <path d="M4 21h16" />
-              </svg>
-              CV
-            </a>
-          </li>
-          <li>
-            <button
-              className="icon-btn"
-              aria-label="Languages"
-              onClick={() => {
-                setIsOpen(false);
-                onToggleLanguage();
-              }}
-            >
-              <svg className="icon" viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="12" cy="12" r="9" />
+      <ul className={`mobile-menu ${isOpen ? "active" : ""}`}>
+        <li>
+          <a
+            href="CV.pdf"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon-btn"
+            aria-label="Descargar CV"
+            onClick={() => setIsOpen(false)}
+          >
+            <svg className="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3v12" />
+              <path d="M8 11l4 4 4-4" />
+              <path d="M4 21h16" />
+            </svg>
+            CV
+          </a>
+        </li>
+        <li>
+          <button
+            className="icon-btn"
+            aria-label="Languages"
+            onClick={() => {
+              setIsOpen(false);
+              onToggleLanguage();
+            }}
+          >
+            <svg className="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" />
 
-                <path d="M3 12h18" />
-                <path d="M12 3a15 15 0 0 1 0 18" />
-                <path d="M12 3a15 15 0 0 0 0 18" />
+              <path d="M3 12h18" />
+              <path d="M12 3a15 15 0 0 1 0 18" />
+              <path d="M12 3a15 15 0 0 0 0 18" />
 
-                <path d="M5 8h14" />
-                <path d="M5 16h14" />
-              </svg>
-              <span className="text">EN / ES</span>
-            </button>
-          </li>
-          <li>
-            <a
-              href="#contact"
-              className="icon-btn"
-              aria-label="Contact"
-              onClick={() => setIsOpen(false)}
-            >
-              <svg className="icon" viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="12" cy="8" r="4" />
+              <path d="M5 8h14" />
+              <path d="M5 16h14" />
+            </svg>
+            <span className="text">EN / ES</span>
+          </button>
+        </li>
+        <li>
+          <a
+            href="#contact"
+            className="icon-btn"
+            aria-label="Contact"
+            onClick={() => setIsOpen(false)}
+          >
+            <svg className="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="4" />
 
-                <path d="M4 20c0-4 4-6 8-6s8 2 8 6" />
-              </svg>
-              {translations[language].navBar.contact}
-            </a>
-          </li>
-        </ul>
-      )}
+              <path d="M4 20c0-4 4-6 8-6s8 2 8 6" />
+            </svg>
+            {translations[language].navBar.contact}
+          </a>
+        </li>
+      </ul>
     </nav>
   );
 }
