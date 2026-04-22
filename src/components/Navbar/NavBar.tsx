@@ -105,7 +105,7 @@ function NavBar({ onToggleLanguage, language }: NavBarProps) {
         <li>
           <a
             href="#contact"
-            className="icon-btn"
+            className="icon-btn contact-link"
             aria-label="Contact"
             onClick={() => setIsOpen(false)}
           >

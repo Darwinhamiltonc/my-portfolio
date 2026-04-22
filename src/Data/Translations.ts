@@ -1,7 +1,7 @@
 export const translations = {
   en: {
     navBar: {
-      contact: "Contact",
+      contact: "CONTACT",
     },
     heroSection: {
       heroRol: "Frontend Developer",
@@ -52,7 +52,7 @@ export const translations = {
   },
   es: {
     navBar: {
-      contact: "Contacto",
+      contact: "CONTACTO",
     },
     heroSection: {
       heroRol: "Frontend Developer",

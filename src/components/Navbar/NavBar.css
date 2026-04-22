@@ -94,3 +94,49 @@ li {
   font-size: 14px;
   white-space: nowrap;
 }
+
+@media (min-width: 768px) {
+  nav {
+    padding: 1.5rem 2.5rem;
+  }
+
+  .title {
+    font-size: 1.73rem;
+  }
+
+  .me img {
+    height: 70px;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .mobile-menu {
+    position: static;
+    transform: none;
+    opacity: 1;
+    border: none;
+    background: transparent;
+    padding: 0;
+    gap: 16px;
+    font-size: 1.1rem;
+  }
+
+  .mobile-menu a {
+    flex-direction: row;
+  }
+
+  .icon-btn {
+    flex-direction: row;
+    gap: 3px;
+    padding: 8px 5px;
+  }
+
+  .text {
+    font-size: 1.1rem;
+  }
+  .contact-link {
+    font-weight: bold;
+  }
+}
