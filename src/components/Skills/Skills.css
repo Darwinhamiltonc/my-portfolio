@@ -11,6 +11,7 @@
   gap: 10px;
   border-radius: 15px;
   padding: 10px;
+
 }
 
 .skills-item {
@@ -58,4 +59,24 @@
 
 .github-icon {
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+
+  .skills-title {
+    font-size: 2.6rem;
+  }
+
+  .item-icon {
+  width: 65px;
+  height: 65px;
+}
+
+.item-name {
+  font-size: 1.2rem;
+}
+
+.skills-card {
+margin-bottom: 16rem;
+}
 }

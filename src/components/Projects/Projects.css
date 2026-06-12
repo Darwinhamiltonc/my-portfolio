@@ -16,3 +16,17 @@
   border-radius: 15px;
   border: 1px solid var(--border-soft);
 }
+
+@media (max-width: 768px) {
+.project-section {
+  margin-bottom: 16rem;
+}
+.project-title {
+  font-size: 2.6rem;
+}
+.project-card {
+  width: 430px;
+  height: 220px;  
+  margin-bottom: 20px;
+}
+}
