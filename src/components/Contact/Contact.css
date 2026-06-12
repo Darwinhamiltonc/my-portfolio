@@ -32,3 +32,30 @@
   color: white;
   font-size: 18px;
 }
+
+@media (max-width: 768px) {
+ 
+  .contact-form {
+    margin-bottom: 19rem;
+  }
+
+  .contact-title {
+    font-size: 2.6rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 1rem;
+    font-size: 1.3rem;
+    outline-color: rgb(0, 85, 255);
+    width: 650px;
+    align-self: center;
+  }
+
+  .contact-form button {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    width: 650px;
+    align-self: center;
+  }
+}

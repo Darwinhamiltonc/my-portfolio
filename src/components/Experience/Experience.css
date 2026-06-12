@@ -30,3 +30,20 @@
   color: var(--text-muted);
   line-height: 1.4;
 }
+
+@media (max-width: 768px) {
+ 
+
+  .experience-title {
+    font-size: 2.6rem;
+  }
+
+  .experience-list {
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+  .experience-section {
+    display: flex;
+  }
+  
+}
