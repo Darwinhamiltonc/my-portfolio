@@ -82,7 +82,7 @@
   border-radius: 8px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .hero {
     margin:2rem 0 13rem 0;
   }

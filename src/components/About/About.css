@@ -24,7 +24,7 @@
   background-color: var(--bg-card);
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .about-section {
     margin-bottom: 16rem;
   }
