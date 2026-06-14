@@ -11,6 +11,8 @@ main section {
 :root {
   --bg-main: #121212;
   --bg-card: #181818;
+  --bg-btn-hover: #2a2a2a;
+  --bg-btn-active: #2a2a2a;
   --text-main: #ededed;
   --text-secondary: #e6e6e6fd;
   --text-muted: #b3b3b3;
