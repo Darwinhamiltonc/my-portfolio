@@ -144,7 +144,7 @@ li {
 @media (min-width: 1024px) {/* computer styles */
 
   nav {
-    padding: 2rem 3rem;
+    padding: 1rem 3rem;
   }
 
   .title {
@@ -185,14 +185,18 @@ li {
     padding: 8px 14px;
   }
 
-  .icon-btn:hover {
-    background-color: var(--bg-btn-hover)
-  }
-  
-  .icon-btn:active {
-    background-color: var(--bg-btn-active);
-    transform: scale(1.1);
-  }
+.icon-btn{
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.icon-btn:hover {
+  background-color: var(--bg-btn-hover);
+}
+
+.icon-btn:active{
+  background-color: var(--bg-btn-active);
+  transform: scale(1.1);
+}
 
   .text {
     font-size: 1.25rem;

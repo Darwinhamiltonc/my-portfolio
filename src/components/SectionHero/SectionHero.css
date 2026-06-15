@@ -45,9 +45,11 @@
 .linkedin-i {
   color: #0077b5;
 }
+
 .github-i {
   color: #fff;
 }
+
 .hero-socials svg {
   width: 2.5rem;
   height: 2.5rem;
@@ -64,18 +66,21 @@
   gap: 1.5rem;
   margin-bottom: 4rem;
 }
+
 .cta-projects,
 .cta-contact {
   padding: 1rem 1.5rem;
   font-weight: 600;
   text-decoration: none;
 }
+
 .cta-projects {
   background-color: transparent;
   color: var(--text-secondary);
   border: 2px solid var(--border-soft);
   border-radius: 8px;
 }
+
 .cta-contact {
   background-color: transparent;
   color: var(--text-secondary);
@@ -111,4 +116,55 @@
   width: 3rem;
   height: 3rem;
 }
+}
+@media (min-width: 1024px) {/* computer styles*/
+
+  .hero {
+    margin:1rem 0 13rem 0;
+  }
+
+  .hero-role {
+    font-size: 3.3rem;
+  }
+
+  .hero-stack {
+    font-size: 1rem;
+  }
+
+  .hero-description {
+    font-size: 1.3rem;
+  }
+
+  .gmail svg {
+    font-size: 1.3rem;
+  }
+
+ .cta-projects,
+.cta-contact {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-size: 1.25rem;
+}
+
+.cta-projects:hover,
+.cta-contact:hover {
+  background-color: var(--bg-btn-hover);
+}
+
+.cta-projects:active,
+.cta-contact:active {
+  background-color: var(--bg-btn-active);
+  transform: scale(1.1);
+}
+
+  .hero-social-title {
+    font-size: 2.8rem;
+  }
+  .hero-socials svg {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .gmail-icon {
+    width: 3.3rem;
+    height: 3.3rem;
+  }
 }
