@@ -64,7 +64,7 @@ function NavBar({ onToggleLanguage, language }: NavBarProps) {
       <ul className={`mobile-menu ${isOpen ? "active" : ""}`}>
         <li>
           <a
-            href="CV.pdf"
+            href={"/cv.pdf"}
             download
             target="_blank"
             rel="noopener noreferrer"
