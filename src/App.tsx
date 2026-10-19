@@ -43,10 +43,11 @@ function App() {
         </Reveal>
 
         <Reveal>
-          <ContactForm language={language} />
-        </Reveal>
-        <Reveal>
           <Experience language={language} />
+        </Reveal>
+
+        <Reveal>
+          <ContactForm language={language} />
         </Reveal>
       </main>
 
