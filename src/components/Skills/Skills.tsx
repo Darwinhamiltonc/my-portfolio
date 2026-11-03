@@ -33,7 +33,7 @@ const skills: Skill[] = [
 
 function Skills({ language }: SkillsProps) {
   return (
-    <section className="skills-section">
+    <div className="skills-section">
       <h2 className="skills-title">
         {translations[language].skillsSection.skillsTitle}
       </h2>
@@ -49,7 +49,7 @@ function Skills({ language }: SkillsProps) {
           );
         })}
       </ul>
-    </section>
+    </div>
   );
 }
 

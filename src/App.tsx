@@ -4,9 +4,7 @@ import type { Language } from "./Data/Translations";
 import NavBar from "./components/Navbar/NavBar";
 import SectionHero from "./components/SectionHero/SectionHero";
 import Projects from "./components/Projects/Projects";
-import About from "./components/About/About";
-import Skills from "./components/Skills/Skills";
-import ContactForm from "./components/Contact/Contact";
+import Profile from "./components/Profile/Profile";
 import Reveal from "./components/Reveal/Reveal";
 import Experience from "./components/Experience/Experience";
 import Footer from "./components/Footer/Footer";
@@ -33,21 +31,8 @@ function App() {
         <Reveal>
           <Projects language={language} />
         </Reveal>
-
         <Reveal>
-          <About language={language} />
-        </Reveal>
-
-        <Reveal>
-          <Skills language={language} />
-        </Reveal>
-
-        <Reveal>
-          <Experience language={language} />
-        </Reveal>
-
-        <Reveal>
-          <ContactForm language={language} />
+          <Profile language={language} />
         </Reveal>
       </main>
 

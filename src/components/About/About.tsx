@@ -7,14 +7,14 @@ type AboutProps = {
 };
 function About({ language }: AboutProps) {
   return (
-    <section className="about-section">
+    <div className="about-section">
       <h2 className="about-title">
         {translations[language].aboutMeSection.aboutTitle}
       </h2>
       <p className="about-card-text">
         {translations[language].aboutMeSection.aboutDescription}
       </p>
-    </section>
+    </div>
   );
 }
 

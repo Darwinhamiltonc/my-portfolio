@@ -59,7 +59,7 @@ function ContactForm({ language }: ContactFormProps) {
   };
 
   return (
-    <section className="contact-section" id="contact">
+    <div className="contact-section" id="contact">
       <form onSubmit={handleSubmit} className="contact-form">
         <h2 className="contact-title">
           {translations[language].navBar.contact}
@@ -110,7 +110,7 @@ function ContactForm({ language }: ContactFormProps) {
           </p>
         )}
       </form>
-    </section>
+    </div>
   );
 }
 
