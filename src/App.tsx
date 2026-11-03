@@ -6,7 +6,6 @@ import SectionHero from "./components/SectionHero/SectionHero";
 import Projects from "./components/Projects/Projects";
 import Profile from "./components/Profile/Profile";
 import Reveal from "./components/Reveal/Reveal";
-import Experience from "./components/Experience/Experience";
 import Footer from "./components/Footer/Footer";
 
 function App() {
