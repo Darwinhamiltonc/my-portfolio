@@ -15,11 +15,11 @@ function App() {
   };
 
 
-  /**  useEffect(() => {
+   useEffect(() => {
     alert(
       "This web is still in progress, but don't worry everything will be done soon😼",
     );
-  }, []); */
+  }, []); 
   return (
     <>
       <header className="p-header">
