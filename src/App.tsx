@@ -5,9 +5,8 @@ import NavBar from "./components/Navbar/NavBar";
 import SectionHero from "./components/SectionHero/SectionHero";
 import Projects from "./components/Projects/Projects";
 import Profile from "./components/Profile/Profile";
-import Reveal from "./components/Reveal/Reveal";
 import Footer from "./components/Footer/Footer";
-
+import Reveal from "./components/Reveal/Reveal";
 function App() {
   const [language, SetLanguage] = useState<Language>("en");
 
@@ -15,11 +14,12 @@ function App() {
     SetLanguage((prev) => (prev === "en" ? "es" : "en"));
   };
 
-  useEffect(() => {
+
+  /**  useEffect(() => {
     alert(
       "This web is still in progress, but don't worry everything will be done soon😼",
     );
-  }, []);
+  }, []); */
   return (
     <>
       <header className="p-header">
@@ -27,12 +27,11 @@ function App() {
       </header>
       <main>
         <SectionHero language={language} />
-        <Reveal>
+          <Reveal>
           <Projects language={language} />
-        </Reveal>
-        <Reveal>
+          </Reveal>
           <Profile language={language} />
-        </Reveal>
+
       </main>
 
       <footer>

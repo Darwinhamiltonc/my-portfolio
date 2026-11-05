@@ -66,8 +66,12 @@
   .profile-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    column-gap: 4rem; /* espacio entre columnas */
     align-items: start;
+  }
+
+  .profile-section {
+    margin-top: 8rem;
   }
 
 }

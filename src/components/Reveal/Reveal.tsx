@@ -11,27 +11,25 @@ function Reveal({ children, className = "" }: RevealProps) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    const element = ref.current;
+    if (!element) return;
+
     const observer = new IntersectionObserver(
-      (entries) => {
-        const entry = entries[0];
-        setIsVisible(entry.isIntersecting); // 👈 clave
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect(); // una vez revelado, deja de observar
+        }
       },
       {
-        threshold: 0.3,
+        threshold: 0.1,
+        rootMargin: "0px 0px -5% 0px",
       },
     );
 
-    const element = ref.current;
+    observer.observe(element);
 
-    if (element) {
-      observer.observe(element);
-    }
-
-    return () => {
-      if (element) {
-        observer.unobserve(element);
-      }
-    };
+    return () => observer.disconnect();
   }, []);
 
   return (
